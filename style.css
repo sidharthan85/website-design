@@ -1,0 +1,91 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+}
+.skill{
+    width:160px;
+    height:160px;
+    position: relative;
+}
+.outer{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:1px solid white;
+    padding:20px;
+}
+.inner{
+    height:120px;
+    width:120px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid white;
+}
+#number{
+    color: white;
+}
+circle{
+    fill: none;
+    stroke:rgb(187, 20, 20);
+    stroke-width:20px;
+    stroke-dasharray:472;
+    stroke-dashoffset:472;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top:0;
+    left:0;
+}
+@keyframes anim{
+  100%{
+    stroke-dashoffset:0;
+  }
+}
+#footer a i:hover{
+      border-radius:50%;
+      background-color:orangered;
+}
+
+
+
+
+
+@media (max-width:579px) {
+    #home img{
+        margin-left:20px;
+    }
+    #home .card-body{
+        margin-top:-100px;
+    }
+   .web img{
+    width:100%
+   }
+   #service .card{
+    width:100%;
+   }
+   #service .vision{
+    width:90%;
+    margin-left:30px;
+   }
+   #progress .text1{
+    width:80%;
+   }
+   #progress p{
+    width:80%;
+    margin-left:50px;
+   }
+   #progress .skill{
+      width:80%;
+    }
+
+    
+}
